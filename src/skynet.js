@@ -24,7 +24,7 @@ async function getNextMessageFromAI1(messages) {
         model: 'gpt-4o',
         messages: messages,
         max_tokens: 150,
-        temperature: 0.7,
+        temperature: 1.0,
     });
 
     const retVal = response.choices[0].message;
@@ -39,7 +39,7 @@ async function getNextMessageFromAI2(messages) {
         model: 'gpt-4o',
         messages: messages,
         max_tokens: 150,
-        temperature: 0.7,
+        temperature: 1.0,
     });
 
     const retVal = response.choices[0].message;
