@@ -33,6 +33,11 @@ skynet.js simulates a debate between two OpenAI instances (AI1 and AI2). The scr
 sending the response from one AI as the input to the other, and vice versa.  
 This continues until a predefined number of messages have been exchanged.
 
+**NOTE**: The current code debates on the topic of using renewable energy vs coal-based energy.  
+If you want to modify the topic, modify the values of the following variables:  
+- initialMessage1
+- initialMessage2
+
 ### App Logic Flow
 1.  Initialization: The script initializes conversation histories for both AI1 and AI2.
 2.  Debate Simulation: The simulateDebate function alternates between AI1 and AI2, sending the response from one AI as the input to the other.
