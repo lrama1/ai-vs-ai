@@ -5,7 +5,9 @@ You must have your own OpenAI subscription and place your OpenAI key into an
 environment variable called **OPENAI_AI_KEY**.
 
 ## Caution
+<span style="color: red;">
 NEVER put your api key in the code so as not to accidentally leak it.
+</span>
 
 ## Installation
 
