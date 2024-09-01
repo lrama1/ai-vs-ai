@@ -72,7 +72,9 @@ async function simulateDebate() {
     // Output the final chat history
     console.log('Debate Complete. Final Chat History:');
     conversationHistory1.forEach((message, index) => {
-        console.log(`${message.role === 'system' ? 'System' : message.role === 'assistant' ? 'AI1' : 'AI2'}: ${message.content}`);
+        if (message.role !== 'system') {
+            console.log(`${message.role === 'assistant' ? 'AI1' : 'AI2'}: ${message.content}`);
+        }
     });
 }
 
