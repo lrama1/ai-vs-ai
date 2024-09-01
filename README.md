@@ -19,34 +19,6 @@ Run the script using Node.js:
 ```sh
 node skynet.js
 
-### Plan
-1. Create a `README.md` file.
-2. Add sections for installation, usage, and explanation of the logic flow.
-3. Explain the purpose of pushing the user role from one AI to the other.
-
-### Code
-```markdown
-# Skynet.js
-
-## Installation
-
-1. Clone the repository:
-    ```sh
-    git clone <repository-url>
-    cd <repository-directory>
-    ```
-
-2. Install the required modules:
-    ```sh
-    npm install
-    ```
-
-## Usage
-
-Run the script using Node.js:
-```sh
-node skynet.js
-```
 
 ## How It Works
 
