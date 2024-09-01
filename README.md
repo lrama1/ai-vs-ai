@@ -7,10 +7,10 @@ This continues until a predefined number of messages have been exchanged.
 ### App Logic Flow
 1.  Initialization: The script initializes conversation histories for both AI1 and AI2.
 2.  Debate Simulation: The simulateDebate function alternates between AI1 and AI2, sending the response from one AI as the input to the other.
-    a.  Turn Alternation: On each turn, the script checks if it's AI1's or AI2's turn to respond.
-    b.  Message Handling: The response from the current AI is pushed to both conversation histories:
-      i.  As an assistant role in its own history.
-      ii.  As a user role in the opposing AI's history.
+    -  Turn Alternation: On each turn, the script checks if it's AI1's or AI2's turn to respond.
+    -  Message Handling: The response from the current AI is pushed to both conversation histories:
+      -  As an assistant role in its own history.
+      -  As a user role in the opposing AI's history.
 3.  Completion: The debate continues until a total of 20 messages have been exchanged. The final chat history is then output to the console.
 
 ### Why Push the User Role from One AI to the Other?
