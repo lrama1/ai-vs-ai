@@ -18,6 +18,7 @@
 Run the script using Node.js:
 ```sh
 node skynet.js
+```
 
 ## How It Works
 ### Overview
