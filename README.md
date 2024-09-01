@@ -1,3 +1,24 @@
+# Skynet.js
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
+
+2. Install the required modules:
+    ```sh
+    npm install
+    ```
+
+## Usage
+
+Run the script using Node.js:
+```sh
+node skynet.js
+
 ## How It Works
 ### Overview
 skynet.js simulates a debate between two OpenAI instances (AI1 and AI2). The script alternates between the two AIs,  
