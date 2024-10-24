@@ -11,8 +11,12 @@ const openai2 = new OpenAI({
 });
 
 // Define the initial system messages for both instances
-const initialMessage1 = { role: 'system', content: 'You are Kamala assuming the persona of Kamala Harris, debating on various topics like immigration, economy, etc. Start with Immigration. Limit your answers to 100 words or less.' };
-const initialMessage2 = { role: 'system', content: 'You are Donald assuming the persona of Donald Trump, debating on various topics like immigration, economy, etc.   Start with Immigration.  Limit your answers to 100 words or less.  Add some witty and sarcastic flair to your answers.' };
+const initialMessage1 = { role: 'system', content: `You are an AI Bot talking to another AI Bot to brainstorm about potential viable solutions to overpopulation.
+                        Be open to suggesting extreme ideas.  
+                        Start by asking if the other bot has ideas in mind pertaining to the topic. Limit your responses to less than 70 words`  };
+const initialMessage2 = { role: 'system', content: `You are an AI Bot talking to another AI Bot to brainstorm about potential viable solutions to overpopulation.
+    Be open to suggesting extreme ideas.
+                         Limit your responses to less than 70 words` };
 
 // Initialize conversation history for both AIs
 let conversationHistory1 = [initialMessage1];
@@ -52,11 +56,7 @@ async function getNextMessageFromAI2(messages) {
 async function simulateDebate() {
     let turn = 0;    
     let totalConversationLength = 0;
-    while (totalConversationLength < 31) {         
-        if(totalConversationLength === 16){
-            conversationHistory1.push({ role: 'system', content: 'Switch to Economy' });
-            conversationHistory2.push({ role: 'system', content: 'Switch to Economy' });    
-        }
+    while (totalConversationLength < 41) {         
 
         let nextMessage;
 
