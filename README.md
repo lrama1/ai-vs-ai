@@ -33,8 +33,8 @@ skynet.js simulates a debate between two OpenAI instances (AI1 and AI2). The scr
 sending the response from one AI as the input to the other, and vice versa.  
 This continues until a predefined number of messages have been exchanged.
 
-**NOTE**: The current code debates on the topic of using renewable energy vs coal-based energy.  
-If you want to modify the topic, modify the values of the following variables:  
+**NOTE**: The current code has 2 AIs assuming the persona of Kamala Harris and Donald Trump.  
+If you want to modify the topic and personas, modify the values of the following variables:  
 - initialMessage1
 - initialMessage2
 
